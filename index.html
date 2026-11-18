@@ -55,7 +55,7 @@ select{padding:7px 10px;border:1px solid var(--line);border-radius:8px;backgroun
 @media(prefers-reduced-motion:reduce){.track i{transition:none}}
 </style></head><body><div id="lock"><h1>Reporte protegido</h1><p class="sub">Escribe la contraseña para ver los datos.</p><input type="password" id="pw" placeholder="Contraseña" autocomplete="off"><label style="display:block;margin:8px 0;font-size:14px"><input type="checkbox" onchange="document.getElementById('pw').type=this.checked?'text':'password'"> Mostrar contraseña</label><button class="upb" id="go">Abrir reporte</button><p id="lm" class="sub"></p></div>
 <main id="app" hidden>
-<section class="hero"><div><h1>¿Se produce lo que se planifica y se despacha lo que se produce?</h1>
+<section class="hero"><div><h1>Planificación, Producción y Despacho.</h1>
 <p class="sub" id="verdict"></p></div>
 <div><div class="up"><button class="upb" id="ub">Actualizar Excel</button><input type="file" id="uf" accept=".xlsx,.xlsm,.xls" hidden><span id="us">Sube un data.xlsx con las hojas PROD, STS y RECETAS.</span></div><div class="up"><label>Desde <select id="da"></select></label><label>Hasta <select id="db"></select></label><span class="pct">Despacho por Fecha de vencimiento (STS). Producción por Fecha de declaración (PROD).</span></div><div class="tabs" id="ut" role="group" aria-label="Unidad"></div><div id="rails"></div></div></section>
 <div class="kpis" id="kpis"></div>
